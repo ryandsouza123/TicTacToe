@@ -1,0 +1,10 @@
+all:tictac
+
+tictac: exp.o	
+	g++ exp.o -o tictac 
+
+exp.o: exp.cpp
+	g++ -c exp.cpp
+
+clean:
+	rm -rf *o tictac
